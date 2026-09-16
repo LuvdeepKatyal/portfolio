@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background: Crisp Luxury Light Cream/Porcelain -->
+    <linearGradient id="lightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8f5f0"/>
+      <stop offset="100%" stop-color="#ede6dd"/>
+    </linearGradient>
+
+    <!-- Headline Brown Tone for the 'L' -->
+    <linearGradient id="richBrown" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a2c11"/>
+      <stop offset="100%" stop-color="#2a1406"/>
+    </linearGradient>
+
+    <!-- Vibrant Signature Orange for the 'K' -->
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9431"/>
+      <stop offset="100%" stop-color="#e85d04"/>
+    </linearGradient>
+
+    <!-- Soft Depth Shadow -->
+    <filter id="crispShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#3d2314" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Outer Shell (Light Background) -->
+  <rect x="16" y="16" width="480" height="480" rx="128" fill="url(#lightBg)"/>
+  <rect x="16" y="16" width="480" height="480" rx="128" fill="none" stroke="#e0d5c5" stroke-width="4"/>
+
+  <!-- Monogram Group with Subtle Shadow -->
+  <g filter="url(#crispShadow)">
+    <!-- Architectural 'L' Stroke (Espresso Brown) -->
+    <path d="M136 128 
+             C136 121.37 141.37 116 148 116 
+             L196 116 
+             C202.63 116 208 121.37 208 128 
+             L208 308 
+             L264 308 
+             C270.63 308 276 313.37 276 320 
+             L276 356 
+             C276 362.63 270.63 368 264 368 
+             L148 368 
+             C141.37 368 136 362.63 136 356 
+             Z" 
+          fill="url(#richBrown)"/>
+
+    <!-- Interlocking 'K' Upper Blade (Vibrant Orange) -->
+    <path d="M260 268 
+             L340 168 
+             C344.5 162.5 351.5 159 359 159 
+             L388 159 
+             C398 159 403 170.5 397 178 
+             L312 284 
+             Z" 
+          fill="url(#accentOrange)"/>
+
+    <!-- Interlocking 'K' Lower Blade (Vibrant Orange) -->
+    <path d="M280 252 
+             L374 360 
+             C380.5 367.5 375 377 365 377 
+             L336 377 
+             C328.5 377 321.5 373.5 317 368 
+             L238 270 
+             Z" 
+          fill="url(#accentOrange)"/>
+
+    <!-- Core Dynamic Indicator / Precision Point -->
+    <circle cx="218" cy="180" r="13" fill="#ff7a00"/>
+  </g>
+</svg>
